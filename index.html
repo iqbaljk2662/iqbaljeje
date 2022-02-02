@@ -1,0 +1,49 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<div class="w3-container">
+    <img class="w3 container w3-animate-top" src="atas.jpg"style="width:100%;height:40%;"></div>
+</div>
+<div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button" onclick="openfoto('profile')">Profile</button>
+     <button class="w3-bar-item w3-button" onclick="openfoto('gibson')">Gibson</button>
+        <button class="w3-bar-item w3-button" onclick="openfoto('Fender')">Fender</button>
+             <button class="w3-bar-item w3-button" onclick="openfoto('Ibanez')">Ibanez</button>
+         <button class="w3-bar-item w3-button" onclick="openfoto('Yamaha')">Yamaha</button>
+</div>
+<div id="profile" class="w3-container Gitar" style="display:none">
+    <h2>NIM : 10121045<br>
+        NAMA : IQBAL JAYAKUSUMAH<br>
+        KELAS : IF2
+    </h2>
+    </div>
+     <div id="gibson" class="w3-container Gitar w3-animate w3-animate-fading" style="display:none">
+        <h2>Gibson SG Spesial</h2>
+        <img src="gibson.jpg "style="width:20%;">
+     </div>
+           <div id="Fender" class="w3-container Gitar w3-animate-bottom" style="display:none">
+ <h2>Fender</h2>
+ <img src="fender.jpg"style="width:20%;">
+        </div>
+    <div id="Ibanez" class="w3-container Gitar w3-animate-top" style="display:none">
+       <h2>Ibanez</h2>
+          <img src="ibanez.jpg"style="width:20%;">
+    </div>
+      <div id="Yamaha" class="w3-container Gitar w3-animate-zoom" style="display:none">
+         <h2>Yamaha</h2>
+       <img src="yamaha.jpg"style="width:30%;height:40%;">
+     </div>
+<script>
+function openfoto(namaGitar) {
+ var i;
+ var x = document.getElementsByClassName("gitar");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namaGitar).style.display = "block"; 
+}
+</script>
+</body>
+</html>
